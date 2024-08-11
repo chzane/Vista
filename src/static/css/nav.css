@@ -1,0 +1,39 @@
+.nav {
+    z-index: 999;
+
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav #setting {
+    margin-left: auto;
+    margin-top: 40px;
+    margin-right: 20px;
+    padding: 6px 9px;
+
+    background-color: #ffffff00;
+    border-style: none;
+    border-radius: var(--border-radius);
+
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.nav #setting {
+    transition: transform 0.1s ease-in-out;
+}
+
+.nav #setting:hover {
+    background-color: var(--button-hover-color);
+    box-shadow: var(--box-shadow);
+}
+
+.nav #setting:active {
+    transform: scale(0.95);
+}

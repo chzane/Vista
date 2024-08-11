@@ -1,0 +1,112 @@
+#model {
+    z-index: 99999;
+    display: none;
+
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000000b5;
+
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#model .box {
+    position: absolute;
+
+    background-color: var(--bg-color);
+
+    padding: 30px 40px;
+
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    max-height: 600px;
+
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+
+    display: block;
+}
+
+#model.show {
+    opacity: 1;
+}
+
+#model.hide {
+    opacity: 0;
+}
+
+#model .box h1 {
+    font-size: var(--h1-size);
+    text-align: center;
+}
+
+#model .box #close {
+    position: absolute;
+    top: 32px;
+    right: 40px;
+
+    padding: 6px 9px;
+
+    background-color: #ffffff00;
+    border-style: none;
+    border-radius: var(--border-radius);
+
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+#model .box #close {
+    transition: transform 0.1s ease-in-out;
+}
+
+#model .box #close i {
+    font-size: 30px;
+}
+
+#model .box #close:hover {
+    transform: scale(1.1);
+}
+
+#model .box #close:active {
+    transform: scale(0.95);
+}
+
+#model .box .label {
+    font-size: var(--h2-size);
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#model .box .label:first-child {
+    margin-top: 0;
+}
+
+#model .box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    color: var(--text-color);
+    border-radius: var(--border-radius);
+    border-style: none;
+    background-color: var(--input-color);
+    font-size: var(--h4-size);
+}
+
+#model .box #add-website-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    border-style: none;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-size: var(--h4-size);
+}

@@ -1,0 +1,7 @@
+#time {
+    font-size: 130px;
+    font-weight: bold;
+
+    color: #ffffff;
+    transition: color 0.5s;
+}
